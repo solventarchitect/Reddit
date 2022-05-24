@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"],
+      "@/config/*": ["config/*"],
+      "@/context/*": ["context/*"],
+      "@/helpers/*": ["helpers/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/lib/*": ["lib/*"],
+      "@/atoms/*": ["atoms/*"],
+      "@/images/*": ["public/images/*"],
+      "@/fonts/*": ["public/fonts/*"],
+      "@/utils/*": ["utils/*"],
+      "@/contracts/*": ["contracts/*"],
+      "@/assets/*": ["assets/*"],
+      "@/scripts/*": ["scripts/*"],
+      "@/graphql/*": ["graphql/*"],
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
