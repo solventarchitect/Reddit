@@ -16,7 +16,7 @@ function Feed({topic}: Props) {
         }
     })
 
-    const posts: Reddit_post[] = !topic ? data?.getPostList : data?.getPostListByTopic
+    const posts: Post[] = !topic ? data?.getPostList : data?.getPostListByTopic
 
   return (
     <div>
