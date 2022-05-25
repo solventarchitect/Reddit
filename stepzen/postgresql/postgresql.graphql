@@ -4,6 +4,7 @@ type Comments {
   id: ID!
   title: String
   updated_at: DateTime
+  comment: String
   username: String
 }
 
@@ -119,7 +120,7 @@ type Query {
     @dbquery(
       type: "postgresql"
       query: """
-      select * from "subreddit"  where "topic" = $1
+      select * from subreddit  where topic = $1
       """
       configuration: "postgresql_config"
     )
