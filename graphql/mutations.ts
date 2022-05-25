@@ -26,7 +26,6 @@ export const ADD_POST = gql`
     link
     subreddit_id
     username
-    user_id
   }
   }
 `

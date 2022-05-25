@@ -11,6 +11,7 @@ type Post {
   content: String
   created_at: DateTime
   id: ID!
+  subreddit_id: ID!
   image: String
   link: String
   title: String
@@ -138,11 +139,11 @@ type Mutation {
   """
   insertPost(
     image: String!
-    created_at: DateTime!
     video: String!
     link: String!
     content: String!
     title: String!
+    subreddit_id: ID!
     username: String!
   ): Post
     @dbquery(
@@ -166,7 +167,6 @@ type Mutation {
   """
   deletePost(
     image: String!
-    created_at: DateTime!
     video: String!
     id: ID!
     link: String!

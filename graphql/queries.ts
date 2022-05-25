@@ -44,7 +44,6 @@ export const GET_POST_BY_POST_ID = gql`
       link
       subreddit_id
       username
-      user_id
       subreddit {
         created_at
         id
@@ -64,7 +63,6 @@ export const GET_POST_BY_POST_ID = gql`
         post_id
         title
         updated_at
-        user_id
         username
       }
     }
@@ -80,7 +78,6 @@ export const GET_ALL_POSTS_BY_TOPIC = gql`
       link
       subreddit_id
       title
-      user_id
       username
       subreddit {
         created_at
@@ -101,7 +98,6 @@ export const GET_ALL_POSTS_BY_TOPIC = gql`
         post_id
         title
         updated_at
-        user_id
         username
       }
     }
