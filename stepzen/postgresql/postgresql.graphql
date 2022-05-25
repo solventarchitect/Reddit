@@ -4,7 +4,6 @@ type Comments {
   id: ID!
   title: String
   updated_at: DateTime
-  comment: String
   username: String
 }
 
@@ -72,7 +71,7 @@ type Query {
       configuration: "postgresql_config"
     )
 
-    getCommentByPost_id(post_id: ID!): [Comment]
+    getCommentByPost_id(post_id: ID!): [Comments]
     @dbquery(
       type: "postgresql"
       query: """
